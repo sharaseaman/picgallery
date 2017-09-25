@@ -1,16 +1,19 @@
-.img-responsive{
-    max-height: 300px;
-    z-index: -1;
-  }
+ .img-responsive{
+  max-height: 300px;
+  z-index: -1;
+}
+/* 
+.photo, .description{  
+  margin: 50px;
+  height: 300px;
+  width: 100%;
+  right: 0;
+  padding: 15px;
   
-  .photo, .description{  
-    margin: 50px;
-    height: 300px;
-    width: 70%;
-    right: 0;
-    padding: 15px;
-    
-  }
-  .photoDiv{
-    margin-bottom: 10px;
-  }
+} */
+.photo{
+  width: 100%;
+  float: left;
+  border-style: solid;
+  border-width: 1px; 
+}
