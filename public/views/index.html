@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="vendors/angular.min.js"></script>
+    <script src="scripts/client.js"></script>
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/styles.css">  
     <title>Gallery</title>
 </head>
-<body>
-    <header>
-        <h1>Shara's Life</h1>
-        <h2>The Cast:</h2>
-    </header>
-    <body>
 
-        
-    </body>
+<body>
+<header>
+    <h1>Shara's Life</h1>
+    <h2>The Cast:</h2>
+</header>
+<body ng-app="app">
+
+    <div class="container" ng-controller="GalleryController as GC">
+         <!--main div-->
+
+        <!-- photos on browser -->
+    <div ng-repeat="item in GC.cast" class="col-md-4 photoDiv">
+        <!--ng repeat div -->
+    <div class="photo">
+        <p>{{item.name}}</p>
+        <p ng-hide='item.view' ng-click='GC.togglePic( $index )'> {{item.role}} </p>
+        <p><img ng-src="{{item.imageUrl}}" ng-show='item.view' ng-click='GC.togglePic ( $index )' class="img-responsive center-block"
+            width="100%" /></p>
+    </div>
+
 </body>
 </html>
