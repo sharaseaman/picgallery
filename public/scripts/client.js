@@ -10,7 +10,7 @@ app.controller('GalleryController', function(){
   var star = {
     name: "Jacey",
     role: "The niece",
-    imageUrl: 'img/jacey_pose.jpg',
+    image: 'img/jacey_pose.jpg',
     likes: 0,    
     view: true
   };
@@ -19,7 +19,7 @@ app.controller('GalleryController', function(){
   var star = {
     name: "Brady",
     role: 'The Nephew',
-    imageUrl: 'img/brady_hat.jpg',
+    image: 'img/brady_hat.jpg',
     likes: 0,    
     view: true
 };
@@ -27,7 +27,7 @@ app.controller('GalleryController', function(){
   var star = {
     name: "Sarah",
     role: "The Other Half",
-    imageUrl: 'img/sarah_shara_winter.jpg',
+    image: 'img/sarah_shara_winter.jpg',
     likes: 0,   
     view: true
   };
@@ -35,7 +35,7 @@ app.controller('GalleryController', function(){
   var star = {
     name: "The Mom",
     role: 'Love this lady',
-    imageUrl: 'img/shara_mom_beah.jpg',
+    image: 'img/shara_mom_beah.jpg',
     likes: 0,    
     view: true
 };
@@ -43,7 +43,7 @@ app.controller('GalleryController', function(){
   var star = {
     name: "Kurt",
     role: 'Sweet boy',
-    imageUrl: 'img/kurt_soccer.jpg',
+    image: 'img/kurt_soccer.jpg',
     likes: 0,
     view: true
 };
@@ -51,7 +51,7 @@ app.controller('GalleryController', function(){
   var star = {
     name: "Family",
     role: 'Three of us',
-    imageUrl: 'img/falcon_andmater.jpg',
+    image: 'img/falcon_andmater.jpg',
     likes: 0,
     
     view: true

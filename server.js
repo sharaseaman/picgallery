@@ -7,8 +7,8 @@ var port = 5000;
 //route vars
 var indexRouter = require('./routes/index');
 
-app.use(bodyParser.json());
 
+app.use(bodyParser.json());
 app.use(express.static('public')); 
 
 
