@@ -21,9 +21,9 @@
 
     <div class="container" ng-controller="GalleryController as GC">
          <!--main div-->
-
+   <div class="row">
         <!-- photos on browser -->
-    <div ng-repeat="item in GC.cast" class="col-md-3 photoDiv" class="photo">
+    <div ng-repeat="item in GC.cast" class="col-md-4 photoDiv" class="photo">
         <!--ng repeat div -->
     <div class="photo div">
         <p>{{item.name}}</p>
@@ -31,9 +31,18 @@
             {{item.role}} </p>
         <p><img ng-src="{{item.imageUrl}}" ng-show='item.view' ng-click='GC.togglePic ( $index )' 
             class="img-responsive center-block"
-            width="100%" /></p>
+            width="100%" ></p>
+            <div class="button">
+                <button ng-click="count = count + 1" ng-init="count=0">
+                  Like
+                </button>
+                <span>
+                  count: {{count}}
+                </span>
+          </div>
     </div>
-    
-  
+    </div>
+  </div>
+  </div>
 </body>
 </html>
