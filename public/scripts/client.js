@@ -15,6 +15,41 @@ app.controller('GalleryController', function(){
   };
   vm.cast.push ( star );
 
+  var star = {
+    name: "Brady",
+    role: 'The Nephew',
+    imageUrl: 'img/brady_hat.jpg',
+    view: true
+};
+  vm.cast.push( star );
+  var star = {
+    name: "Sarah",
+    role: "The Other Half",
+    imageUrl: 'img/sarah_shara_winter.jpg',
+    view: true
+  };
+  vm.cast.push ( star );
+  var star = {
+    name: "The Mom",
+    role: 'Love this lady',
+    imageUrl: 'img/shara_mom_beah.jpg',
+    view: true
+};
+  vm.cast.push( star );
+  var star = {
+    name: "Kurt",
+    role: 'Sweet boy',
+    imageUrl: 'img/kurt_soccer.jpg',
+    view: true
+};
+  vm.cast.push( star );
+  var star = {
+    name: "Family",
+    role: 'Three of us',
+    imageUrl: 'img/falcon_andmater.jpg',
+    view: true
+};
+  vm.cast.push( star );
 
   vm.togglePic = function( e ){
     vm.cast[ e ].view = !vm.cast[ e ].view;

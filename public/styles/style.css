@@ -1,0 +1,16 @@
+.img-responsive{
+    max-height: 300px;
+    z-index: -1;
+  }
+  
+  .photo, .description{  
+    margin: 50px;
+    height: 300px;
+    width: 70%;
+    right: 0;
+    padding: 15px;
+    
+  }
+  .photoDiv{
+    margin-bottom: 10px;
+  }

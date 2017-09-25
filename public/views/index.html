@@ -8,7 +8,7 @@
     <script src="vendors/angular.min.js"></script>
     <script src="scripts/client.js"></script>
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="styles/styles.css">  
+    <link rel="stylesheet" href="styles/style.css">  
     <title>Gallery</title>
 </head>
 
@@ -31,6 +31,14 @@
         <p><img ng-src="{{item.imageUrl}}" ng-show='item.view' ng-click='GC.togglePic ( $index )' class="img-responsive center-block"
             width="100%" /></p>
     </div>
-
+    <br>
+    <div class="button">
+            <button ng-click="count = count + 1" ng-init="count=0">
+              Like
+            </button>
+            <span>
+              count: {{count}}
+            </span>
+      </div>
 </body>
 </html>
