@@ -11,7 +11,7 @@ app.controller('GalleryController', function(){
     name: "Jacey",
     role: "The niece",
     image: 'img/jacey_pose.jpg',
-    likes: 0,    
+    touch: 0,    
     view: true
   };
   vm.cast.push ( star );
@@ -20,7 +20,7 @@ app.controller('GalleryController', function(){
     name: "Brady",
     role: 'The Nephew',
     image: 'img/brady_hat.jpg',
-    likes: 0,    
+    touch: 0,    
     view: true
 };
   vm.cast.push( star );
@@ -28,7 +28,7 @@ app.controller('GalleryController', function(){
     name: "Sarah",
     role: "The Other Half",
     image: 'img/sarah_shara_winter.jpg',
-    likes: 0,   
+    touch: 0,   
     view: true
   };
   vm.cast.push ( star );
@@ -36,7 +36,7 @@ app.controller('GalleryController', function(){
     name: "The Mom",
     role: 'Love this lady',
     image: 'img/shara_mom_beah.jpg',
-    likes: 0,    
+    touch: 0,    
     view: true
 };
   vm.cast.push( star );
@@ -44,7 +44,7 @@ app.controller('GalleryController', function(){
     name: "Kurt",
     role: 'Sweet boy',
     image: 'img/kurt_soccer.jpg',
-    likes: 0,
+    touch: 0,
     view: true
 };
   vm.cast.push( star );
@@ -52,7 +52,7 @@ app.controller('GalleryController', function(){
     name: "Family",
     role: 'Three of us',
     image: 'img/falcon_andmater.jpg',
-    likes: 0,
+    touch: 0,
     
     view: true
 };

@@ -26,7 +26,7 @@
             <!--main div-->
             <div class="row">
                 <!-- photos on browser -->
-                <div ng-repeat="item in GC.cast" class="col-md-4 photo">
+                <div ng-repeat="item in GC.cast" class="col-md-4">
                     <!--ng repeat div -->
                     
                         <div id="img">
@@ -36,9 +36,9 @@
                             <p><img ng-src="{{item.image}}" ng-show='item.view' ng-click='GC.togglePic ( $index )' 
                                 class="img-responsive"></p>
                         </div>
-                        <div id="button">
+                        <div>
                             <button ng-click="count = count + 1" ng-init="count=0">
-                             <i class="material-icons">fingerprint</i>   {{count}} 
+                             <i class="material-icons">fingerprint</i>{{count}} 
                             </button>
                         </div>
                     
