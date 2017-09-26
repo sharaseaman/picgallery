@@ -31,9 +31,10 @@
 
                     <div id="img">
                         <p>{{item.name}}</p>
-                        <p ng-hide='item.view' ng-click='GC.getStars()'>
-                            <!-- {{item.role}}  --> </p>
-                            <p><img ng-src="{{item.url}}"></p>
+                        <p>{{item.role}}</p>
+                        <p><img ng-src="{{item.url}}"></p>
+                        <p>{{ item.touches }} <button ng-click='GC.hoorayForThis( $index )'>
+                                <i class="material-icons">fingerprint</i>Touch!</button></p>
                     </div>
                 </div>
             </div>
