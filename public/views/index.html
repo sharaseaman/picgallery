@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    
+
     <title>Gallery</title>
 </head>
 
@@ -22,26 +22,19 @@
 
     <body ng-app="app">
 
-        <div class="container" ng-controller="GalleryController as GC">
+        <div class="container" ng-controller="GalleryController as GC" ng-init="GC.getStars()">
             <!--main div-->
             <div class="row">
                 <!-- photos on browser -->
                 <div ng-repeat="item in GC.cast" class="col-md-4">
                     <!--ng repeat div -->
-                    
-                        <div id="img">
-                            <p>{{item.name}}</p>
-                            <p ng-hide='item.view' ng-click='GC.togglePic( $index )'>
-                                {{item.role}} </p>
-                            <p><img ng-src="{{item.image}}" ng-show='item.view' ng-click='GC.togglePic ( $index )' 
-                                class="img-responsive"></p>
-                        </div>
-                        <div>
-                            <button ng-click="count = count + 1" ng-init="count=0">
-                             <i class="material-icons">fingerprint</i>{{count}} 
-                            </button>
-                        </div>
-                    
+
+                    <div id="img">
+                        <p>{{item.name}}</p>
+                        <p ng-hide='item.view' ng-click='GC.getStars()'>
+                            <!-- {{item.role}}  --> </p>
+                            <p><img ng-src="{{item.url}}"></p>
+                    </div>
                 </div>
             </div>
         </div>
