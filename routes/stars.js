@@ -4,12 +4,12 @@ var router = express.Router();
 var cast = [];
 
 //put star objects here with push
-cast.push( {url: 'http://localhost:5000/img/jacey_pose.jpg' ,name: 'Jacey', role: 'The Niece'});
-cast.push( {url: 'http://localhost:5000/img/jacey_pose.jpg' ,name: 'Jacey', role: 'The Niece'});
-cast.push( {url: 'http://localhost:5000/img/jacey_pose.jpg' ,name: 'Jacey', role: 'The Niece'});
-cast.push( {url: 'http://localhost:5000/img/jacey_pose.jpg' ,name: 'Jacey', role: 'The Niece'});
-cast.push( {url: 'http://localhost:5000/img/jacey_pose.jpg' ,name: 'Jacey', role: 'The Niece'});
-cast.push( {url: 'http://localhost:5000/img/jacey_pose.jpg' ,name: 'Jacey', role: 'The Niece'});
+cast.push( {url: '/img/jacey_pose.jpg' ,name: 'Jacey', role: 'The Niece'});
+cast.push( {url: '/img/jacey_pose.jpg' ,name: 'Jacey', role: 'The Niece'});
+cast.push( {url: '/img/jacey_pose.jpg' ,name: 'Jacey', role: 'The Niece'});
+cast.push( {url: '/img/jacey_pose.jpg' ,name: 'Jacey', role: 'The Niece'});
+cast.push( {url: '/img/jacey_pose.jpg' ,name: 'Jacey', role: 'The Niece'});
+cast.push( {url: '/img/jacey_pose.jpg' ,name: 'Jacey', role: 'The Niece'});
 
 
 router.get( '/', function(req,res){
